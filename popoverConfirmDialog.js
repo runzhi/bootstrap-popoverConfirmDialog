@@ -32,7 +32,7 @@
         
         var yes_button_click = function() {
             $element.popover('hide');
-            target && target.apply(this);
+            target && target.apply(element);
         };
         
         var no_button_click = function() {

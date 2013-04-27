@@ -1,0 +1,38 @@
+<html>
+	<head>
+		<link href="css/bootstrap.css" rel="stylesheet" rev="stylesheet"  type="text/css">
+
+		<meta content="text/html; charset=UTF-8" />
+
+		<script type="text/javascript" src= "js/jquery-1.8.2.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.js"></script>
+		<script type="text/javascript" src="popoverConfirmDialog.js"></script>
+
+		<script type="text/javascript">
+			$(function() {
+				$("a").popoverConfirmDialog(function() {
+					alert("You clicked "+ $(this).attr("data"));
+				}, {
+					message : "The is the confirm message"
+				});
+			});
+		</script>
+	</head>
+
+	<body>
+		<div class="container">
+			<p>&nbsp;</p>
+			
+			<p>&nbsp;</p>
+			<a class="a" data="link1" href="#">Click it</a>
+			<br/>
+			
+			<a class="a" data="link2" href="#">Click it</a>
+			<br />
+			
+			<a class="a" data="link3" href="#">Click it</a>
+		</div>
+
+	</body>
+
+</html>
